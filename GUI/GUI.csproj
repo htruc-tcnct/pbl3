@@ -46,10 +46,16 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,6 +65,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\KhachHang\ChinhSuaKH.cs">
@@ -114,6 +121,18 @@
     </Compile>
     <Compile Include="Admin\MainViewAdmin.Designer.cs">
       <DependentUpon>MainViewAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER\DatBan\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER\DatBan\OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER\LichSuDat\HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER\LichSuDat\HistoryForm.Designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="USER\MainViewCustomer.cs">
       <SubType>Form</SubType>
@@ -178,6 +197,12 @@
     <Compile Include="Admin\THUCDON\ThemMoi.Designer.cs">
       <DependentUpon>ThemMoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="USER\TaiKhoan\AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER\TaiKhoan\AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\KhachHang\ChinhSuaKH.resx">
       <DependentUpon>ChinhSuaKH.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +266,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\THUCDON\ThemMoi.resx">
       <DependentUpon>ThemMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\DatBan\OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\LichSuDat\HistoryForm.resx">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\MainViewCustomer.resx">
+      <DependentUpon>MainViewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\TaiKhoan\AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

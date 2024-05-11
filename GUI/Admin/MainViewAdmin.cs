@@ -20,7 +20,7 @@ namespace GUI
         public MainViewAdmin()
         {
             InitializeComponent();
-            mdiProp();
+            //mdiProp();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -32,11 +32,11 @@ namespace GUI
         {
 
         }
-        private void mdiProp()
-        {
-            this.SetBevel(false);
-            Controls.OfType<MdiClient>().FirstOrDefault().BackColor = Color.FromArgb(232, 234, 237);
-        }
+        //private void mdiProp()
+        //{
+        //    this.SetBevel(false);
+        //    Controls.OfType<MdiClient>().FirstOrDefault().BackColor = Color.FromArgb(232, 234, 237);
+        //}
         bool menuExpand = false;
 
         private void menuTransition_Tick(object sender, EventArgs e)
@@ -256,6 +256,16 @@ namespace GUI
             {
                 btn.BackColor = originalColor; // Thay đổi màu nền của button trở lại thành màu đỏ khi di chuột rời khỏi
             }
+        }
+
+        private void MainViewAdmin_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -66,6 +66,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1617, 39);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 
@@ -291,6 +292,7 @@
             this.IsMdiContainer = true;
             this.Name = "MainViewAdmin";
             this.Text = "XIN CHÀO NGÀY MỚI, ADMIN";
+            this.Load += new System.EventHandler(this.MainViewAdmin_Load_1);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sidebar.ResumeLayout(false);

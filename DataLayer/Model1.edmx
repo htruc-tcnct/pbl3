@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="PBL3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="PBL3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_Admin">
           <Key>
             <PropertyRef Name="ID" />
@@ -33,6 +33,7 @@
           <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="RewardPoints" Type="int" />
           <Property Name="Password" Type="nchar" MaxLength="100" />
+          <Property Name="image" Type="image" />
         </EntityType>
         <EntityType Name="tb_DiningTable">
           <Key>
@@ -388,8 +389,7 @@
             <End Role="tb_Wage" EntitySet="tb_Wage" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="PBL3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -425,6 +425,7 @@
           <NavigationProperty Name="tb_Invoice" Relationship="Self.FK_Invoice_Customer" FromRole="tb_Customer" ToRole="tb_Invoice" />
           <NavigationProperty Name="tb_Payment" Relationship="Self.FK_Payment_Customer" FromRole="tb_Customer" ToRole="tb_Payment" />
           <NavigationProperty Name="tb_Rating" Relationship="Self.FK_tb_Rating_tb_Customer" FromRole="tb_Customer" ToRole="tb_Rating" />
+          <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="tb_DiningTable">
           <Key>
@@ -831,6 +832,7 @@
           <EntitySetMapping Name="tb_Customer">
             <EntityTypeMapping TypeName="PBL3Model.tb_Customer">
               <MappingFragment StoreEntitySet="tb_Customer">
+                <ScalarProperty Name="image" ColumnName="image" />
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
