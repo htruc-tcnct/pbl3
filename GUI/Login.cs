@@ -63,7 +63,7 @@ namespace GUI
                         //Account customer = new Account();
                         //if (customer.CheckLogin(user, pass))
                         //{
-                    MainViewEmployee mainViewCustomer = new MainViewEmployee();
+                    MainViewEmployee mainViewCustomer = new MainViewEmployee(user);
                     Hide();
                     MessageBox.Show("Đăng nhập thành công", "Thành công");
                     mainViewCustomer.Show();

@@ -110,6 +110,18 @@
     <Compile Include="Admin\Nhanvien\Them.Designer.cs">
       <DependentUpon>Them.cs</DependentUpon>
     </Compile>
+    <Compile Include="EMPLOYEE\ManageTable\ManageTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE\ManageTable\ManageTable.Designer.cs">
+      <DependentUpon>ManageTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEE\TaiKhoanNhanVien\accountNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE\TaiKhoanNhanVien\accountNV.Designer.cs">
+      <DependentUpon>accountNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,11 +134,36 @@
     <Compile Include="Admin\MainViewAdmin.Designer.cs">
       <DependentUpon>MainViewAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="USER\DatBan\OrderFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER\DatBan\OrderFood.Designer.cs">
+      <DependentUpon>OrderFood.cs</DependentUpon>
+    </Compile>
     <Compile Include="USER\DatBan\OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="USER\DatBan\OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER\DatBan\ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USER\DatBan\ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER\DatBan\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USER\DatBan\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER\DatBan\UserSession.cs" />
+    <Compile Include="USER\LichSuDat\detailHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER\LichSuDat\detailHistory.Designer.cs">
+      <DependentUpon>detailHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="USER\LichSuDat\HistoryForm.cs">
       <SubType>Form</SubType>
@@ -176,10 +213,10 @@
     <Compile Include="Admin\THUCDON\ManageMenu.Designer.cs">
       <DependentUpon>ManageMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ManageStatistic.cs">
+    <Compile Include="Admin\THUCDON\ManageStatistic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\ManageStatistic.Designer.cs">
+    <Compile Include="Admin\THUCDON\ManageStatistic.Designer.cs">
       <DependentUpon>ManageStatistic.cs</DependentUpon>
     </Compile>
     <Compile Include="mdProperties.cs" />
@@ -197,11 +234,11 @@
     <Compile Include="Admin\THUCDON\ThemMoi.Designer.cs">
       <DependentUpon>ThemMoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="USER\TaiKhoan\AccountForm.cs">
+    <Compile Include="USER\TaiKhoan\AccountForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="USER\TaiKhoan\AccountForm.Designer.cs">
-      <DependentUpon>AccountForm.cs</DependentUpon>
+    <Compile Include="USER\TaiKhoan\AccountForm1.Designer.cs">
+      <DependentUpon>AccountForm1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin\KhachHang\ChinhSuaKH.resx">
       <DependentUpon>ChinhSuaKH.cs</DependentUpon>
@@ -223,6 +260,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Nhanvien\Them.resx">
       <DependentUpon>Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEE\ManageTable\ManageTable.resx">
+      <DependentUpon>ManageTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEE\TaiKhoanNhanVien\accountNV.resx">
+      <DependentUpon>accountNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -248,7 +291,7 @@
     <EmbeddedResource Include="Admin\THUCDON\ManageMenu.resx">
       <DependentUpon>ManageMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ManageStatistic.resx">
+    <EmbeddedResource Include="Admin\THUCDON\ManageStatistic.resx">
       <DependentUpon>ManageStatistic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -267,8 +310,20 @@
     <EmbeddedResource Include="Admin\THUCDON\ThemMoi.resx">
       <DependentUpon>ThemMoi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="USER\DatBan\OrderFood.resx">
+      <DependentUpon>OrderFood.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="USER\DatBan\OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\DatBan\ucProduct.resx">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\DatBan\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\LichSuDat\detailHistory.resx">
+      <DependentUpon>detailHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="USER\LichSuDat\HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>
@@ -276,8 +331,8 @@
     <EmbeddedResource Include="USER\MainViewCustomer.resx">
       <DependentUpon>MainViewCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="USER\TaiKhoan\AccountForm.resx">
-      <DependentUpon>AccountForm.cs</DependentUpon>
+    <EmbeddedResource Include="USER\TaiKhoan\AccountForm1.resx">
+      <DependentUpon>AccountForm1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -306,6 +361,9 @@
   <ItemGroup>
     <None Include="Resources\icons8-menu-50.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Admin\thongke\" />
+    <Folder Include="EMPLOYEE\payroll\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

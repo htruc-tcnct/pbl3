@@ -8,19 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI
+namespace GUI.EMPLOYEE.ManageTable
 {
-    public partial class ManageStatistic : Form
+    public partial class ManageTable : Form
     {
-        public ManageStatistic()
+        public ManageTable()
         {
             InitializeComponent();
         }
 
-        private void ManageStatistic_Load(object sender, EventArgs e)
-        {
-            this.ControlBox = false;
-
-        }
+      
     }
 }

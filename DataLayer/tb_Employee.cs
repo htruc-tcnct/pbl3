@@ -29,6 +29,8 @@ namespace DataLayer
         public Nullable<System.DateTime> BirthDate { get; set; }
         public string TypeEmployee { get; set; }
         public string Password { get; set; }
+        public byte[] image { get; set; }
+        public string Address { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_Invoice> tb_Invoice { get; set; }

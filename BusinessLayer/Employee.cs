@@ -160,20 +160,22 @@ namespace BusinessLayer
             }
 
         }
-        public tb_Employee Update(tb_Employee customer)
+        public tb_Employee Update(tb_Employee employee)
         {
             try
             {
-                var _dt = db.tb_Employee.FirstOrDefault(x => x.EmployeeID == customer.EmployeeID);
+                var _dt = db.tb_Employee.FirstOrDefault(x => x.EmployeeID == employee.EmployeeID);
 
                 if (_dt != null)
                 {
-                    _dt.BirthDate = customer.BirthDate;
-                    _dt.Gender = customer.Gender;
-                    _dt.Name = customer.Name;
-                    _dt.PhoneNumber = customer.PhoneNumber;
-                    _dt.Password = customer.Password;
-                    _dt.TypeEmployee = customer.TypeEmployee;
+                    _dt.BirthDate = employee.BirthDate;
+                    _dt.Gender = employee.Gender;
+                    _dt.Name = employee.Name;
+                    _dt.Address = employee.Address;
+                    _dt.PhoneNumber = employee.PhoneNumber;
+                    _dt.Password = employee.Password;
+                    _dt.TypeEmployee = employee.TypeEmployee;
+                    _dt.image = employee.image;
                     db.SaveChanges();
 
                     // Trả về đối tượng đã được cập nhật từ cơ sở dữ liệu
@@ -181,7 +183,7 @@ namespace BusinessLayer
                 }
                 else
                 {
-                    throw new Exception("Không tìm thấy nhân viên với EmployeeID: " + customer.EmployeeID);
+                    throw new Exception("Không tìm thấy nhân viên với EmployeeID: " + employee.EmployeeID);
                 }
             }
             catch (DbEntityValidationException ex)
