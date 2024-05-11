@@ -20,8 +20,41 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void checkEdit1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+        Employee uu = new Employee();
+
+        private void labelControl8_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn đăng ký tài khoản mới không?", "Xác nhận", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Hide();
+
+                RegistrationForm registrationForm = new RegistrationForm();
+                registrationForm.Show();
+            }
+            else
+            {
+
+            }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
             String user = txtuser.Text.Trim();
-            String pass = HashCode.HashPassword( txtPass.Text.Trim());
+            //String pass = HashCode.HashPassword( txtPass.Text.Trim());
+            String pass = txtPass.Text.Trim();
             int role = uu.LoginAs(user, pass);
             Console.WriteLine(role);
             switch (role)
@@ -40,7 +73,7 @@ namespace GUI
                         //Employee employee = new Employee();
                         //if (employee.CheckLogin(user, pass))
                         //{
-                    MainViewCustomer mainViewEmployee = new MainViewCustomer();
+                    MainViewCustomer mainViewEmployee = new MainViewCustomer(user);
                     Hide();
                     MessageBox.Show("Đăng nhập thành công", "Thành công");
                     mainViewEmployee.Show();
@@ -64,7 +97,7 @@ namespace GUI
             }
         }
 
-        private void checkEdit1_CheckedChanged(object sender, EventArgs e)
+        private void checkEdit1_CheckedChanged_1(object sender, EventArgs e)
         {
             if (checkEdit1.Checked)
             {
@@ -75,28 +108,6 @@ namespace GUI
                 txtPass.UseSystemPasswordChar = true;
 
             }
-        }
-        Employee uu = new Employee();
-
-        private void labelControl8_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Bạn có muốn đăng ký tài khoản mới không?", "Xác nhận", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                Hide();
-
-                RegistrationForm registrationForm = new RegistrationForm();
-                registrationForm.Show();
-            }
-            else
-            {
-
-            }
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

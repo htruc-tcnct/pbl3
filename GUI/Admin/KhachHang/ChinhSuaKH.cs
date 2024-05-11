@@ -66,8 +66,9 @@ namespace GUI.Admin.Customer
                 up.Birthdate = dpBirth.Value;
                up.Address = txtAddress.Text;
                 up.Password = _pass;
-                _customer.Update(up);
 
+                _customer.Update(up);
+                
                 DialogResult result = MessageBox.Show("Cập nhật Khách hàng thành công! Bạn muốn quay lại trang chủ không?", "Thông báo", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {

@@ -16,22 +16,26 @@ using System.Runtime.CompilerServices;
 using FontAwesome.Sharp;
 using System.Windows.Media;
 using Color = System.Drawing.Color;
+using BusinessLayer;
+using DataLayer;
 namespace GUI
 {
     public partial class MainViewCustomer : Form
     {
-       
+        string _id;
+        Account _customer;
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-        public MainViewCustomer()
+        public MainViewCustomer(string user = null)
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
-
-         
+            _id = user;
+            _customer = new Account();
+            LoadToView();
         }
         private struct RGBColors
         {
@@ -63,6 +67,19 @@ namespace GUI
                 iconcurrentChildHome.IconChar = currentBtn.IconChar;
                 iconcurrentChildHome.IconColor = color;
 
+            }
+        }
+        private void LoadToView()
+        {
+            List<tb_Customer> uu = _customer.GetAccountsFromTable("tb_Customer");
+            foreach(var i in uu)
+            {
+                if(i.CustomerID.Trim() == _id.Trim())
+                {
+
+                 lblName.Text = i.Name;
+                    break;
+                }
             }
         }
         private void DisableButton()
@@ -110,7 +127,7 @@ namespace GUI
 
         private void iconButton1_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new AccountForm());
+            OpenChildForm(new AccountForm(_id));
 
             ActivateButton(sender, RGBColors.color1);
 

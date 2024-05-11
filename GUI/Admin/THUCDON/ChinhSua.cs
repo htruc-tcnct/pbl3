@@ -105,5 +105,10 @@ namespace GUI.THUCDON
         {
 
         }
+
+        private void pbMinhHoa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

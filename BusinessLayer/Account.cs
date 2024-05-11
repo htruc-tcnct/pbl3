@@ -76,6 +76,7 @@ namespace BusinessLayer
                 _dt.PhoneNumber = customer.PhoneNumber;
                 _dt.Password = customer.Password;
                 _dt.Name = customer.Name;
+                _dt.image = customer.image;
                 db.SaveChanges();
 
                 return customer;

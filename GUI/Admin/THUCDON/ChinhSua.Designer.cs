@@ -160,6 +160,7 @@
             this.pbMinhHoa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMinhHoa.TabIndex = 23;
             this.pbMinhHoa.TabStop = false;
+            this.pbMinhHoa.Click += new System.EventHandler(this.pbMinhHoa_Click);
             // 
             // ChinhSua
             // 

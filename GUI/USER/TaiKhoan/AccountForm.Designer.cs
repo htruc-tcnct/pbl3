@@ -43,18 +43,27 @@
             this.rdFemale = new System.Windows.Forms.RadioButton();
             this.rdMale = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtPassNew = new System.Windows.Forms.TextBox();
-            this.txtAccept = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.btnUpdateImg = new FontAwesome.Sharp.IconButton();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtNewPass = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.txtReNewPass = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtOldPass = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcAvt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,7 +93,6 @@
             // 
             // pcAvt
             // 
-            this.pcAvt.Image = ((System.Drawing.Image)(resources.GetObject("pcAvt.Image")));
             this.pcAvt.Location = new System.Drawing.Point(31, 158);
             this.pcAvt.Name = "pcAvt";
             this.pcAvt.Size = new System.Drawing.Size(288, 223);
@@ -115,7 +123,7 @@
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtName.Location = new System.Drawing.Point(512, 57);
             this.txtName.Multiline = true;
@@ -127,12 +135,12 @@
             // txtPhone
             // 
             this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtPhone.Location = new System.Drawing.Point(512, 158);
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(294, 36);
+            this.txtPhone.Size = new System.Drawing.Size(319, 36);
             this.txtPhone.TabIndex = 6;
             this.txtPhone.Text = "Vui lòng nhập số điện thoại của bạn";
             // 
@@ -149,7 +157,7 @@
             // txtAddress
             // 
             this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtAddress.Location = new System.Drawing.Point(977, 57);
             this.txtAddress.Multiline = true;
@@ -213,37 +221,13 @@
             this.label4.Text = "Mật khẩu mới";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // txtPassNew
-            // 
-            this.txtPassNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtPassNew.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassNew.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtPassNew.Location = new System.Drawing.Point(977, 158);
-            this.txtPassNew.Multiline = true;
-            this.txtPassNew.Name = "txtPassNew";
-            this.txtPassNew.Size = new System.Drawing.Size(294, 36);
-            this.txtPassNew.TabIndex = 11;
-            this.txtPassNew.Text = "Vui lòng nhập mật khẩu mới";
-            // 
-            // txtAccept
-            // 
-            this.txtAccept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtAccept.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccept.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtAccept.Location = new System.Drawing.Point(978, 274);
-            this.txtAccept.Multiline = true;
-            this.txtAccept.Name = "txtAccept";
-            this.txtAccept.Size = new System.Drawing.Size(294, 36);
-            this.txtAccept.TabIndex = 13;
-            this.txtAccept.Text = "Nhập vào đây";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(941, 237);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(948, 367);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(265, 17);
+            this.label5.Size = new System.Drawing.Size(284, 20);
             this.label5.TabIndex = 12;
             this.label5.Text = "Nhập mật khẩu hiện tại để xác nhận lưu";
             // 
@@ -257,7 +241,7 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 27;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(1105, 369);
+            this.iconButton1.Location = new System.Drawing.Point(1104, 508);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(167, 51);
             this.iconButton1.TabIndex = 14;
@@ -269,7 +253,7 @@
             // 
             this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(597, 360);
+            this.dateTimePicker1.Location = new System.Drawing.Point(622, 359);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(209, 22);
             this.dateTimePicker1.TabIndex = 15;
@@ -300,6 +284,7 @@
             this.btnUpdateImg.TabIndex = 17;
             this.btnUpdateImg.Text = "Tải lên";
             this.btnUpdateImg.UseVisualStyleBackColor = false;
+            this.btnUpdateImg.Click += new System.EventHandler(this.btnUpdateImg_Click);
             // 
             // label7
             // 
@@ -311,17 +296,118 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Ảnh cá nhân";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(947, 234);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(198, 21);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Xác nhận mật khẩu mới";
+            // 
+            // txtNewPass
+            // 
+            this.txtNewPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtNewPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNewPass.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewPass.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtNewPass.Location = new System.Drawing.Point(1024, 161);
+            this.txtNewPass.Name = "txtNewPass";
+            this.txtNewPass.Size = new System.Drawing.Size(199, 21);
+            this.txtNewPass.TabIndex = 20;
+            this.txtNewPass.Text = "Mật khẩu";
+            this.txtNewPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNewPass.UseSystemPasswordChar = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(979, 138);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(284, 71);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            // 
+            // txtReNewPass
+            // 
+            this.txtReNewPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtReNewPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtReNewPass.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReNewPass.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtReNewPass.Location = new System.Drawing.Point(1024, 293);
+            this.txtReNewPass.Name = "txtReNewPass";
+            this.txtReNewPass.Size = new System.Drawing.Size(199, 21);
+            this.txtReNewPass.TabIndex = 22;
+            this.txtReNewPass.Text = "Mật khẩu";
+            this.txtReNewPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtReNewPass.UseSystemPasswordChar = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(979, 270);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(284, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtOldPass
+            // 
+            this.txtOldPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtOldPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOldPass.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOldPass.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtOldPass.Location = new System.Drawing.Point(1024, 425);
+            this.txtOldPass.Name = "txtOldPass";
+            this.txtOldPass.Size = new System.Drawing.Size(199, 21);
+            this.txtOldPass.TabIndex = 24;
+            this.txtOldPass.Text = "Mật khẩu";
+            this.txtOldPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtOldPass.UseSystemPasswordChar = true;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(979, 402);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(284, 71);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 23;
+            this.pictureBox4.TabStop = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(1134, 479);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(129, 24);
+            this.checkBox1.TabIndex = 25;
+            this.checkBox1.Text = "Hiện mật khẩu";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // AccountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1379, 681);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.txtOldPass);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.txtReNewPass);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtNewPass);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.txtAccept);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtPassNew);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtAddress);
@@ -342,6 +428,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,13 +452,19 @@
         private System.Windows.Forms.RadioButton rdFemale;
         private System.Windows.Forms.RadioButton rdMale;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtPassNew;
-        private System.Windows.Forms.TextBox txtAccept;
         private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label6;
         private FontAwesome.Sharp.IconButton btnUpdateImg;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtNewPass;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox txtReNewPass;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtOldPass;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
