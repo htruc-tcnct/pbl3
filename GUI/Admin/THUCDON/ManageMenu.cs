@@ -120,11 +120,12 @@ namespace GUI
             DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
             string masp = selectedRow.Cells["Mãsảnphẩm"].Value.ToString();
 
-            _product.Delete(masp);
+            _ = _product.Delete(masp);
 
             DialogResult result = MessageBox.Show("Xóa món thành công! Bạn muốn quay lại trang chủ không?", "Thông báo", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
+                LoadDataToView();
                 Hide();
                 MainViewAdmin f1 = new MainViewAdmin();
                 f1.Show();

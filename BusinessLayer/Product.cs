@@ -1,10 +1,12 @@
 ﻿using DataLayer;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace BusinessLayer
 {
@@ -74,20 +76,34 @@ namespace BusinessLayer
             }
         }
 
-        public void Delete(string id)
+        public async Task Delete(string id)
         {
             try
             {
-                var _dt = db.tb_Product.FirstOrDefault(x => x.ProductID == id);
-                db.tb_Product.Remove(_dt);
-                db.SaveChanges();
+                var _dt = await db.tb_Product.FirstOrDefaultAsync(x => x.ProductID == id);
 
+                if (_dt != null)
+                {
+                    db.tb_Product.Remove(_dt);
+                    await db.SaveChangesAsync();
+                }
+                else
+                {
+                    throw new Exception("Không tìm thấy sản phẩm để xóa.");
+                }
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                // Ghi log hoặc xử lý lỗi tùy ý
+                throw new Exception("Đã xảy ra lỗi khi xóa sản phẩm.", ex);
+            }
+            finally
+            {
+                // Giải phóng tài nguyên (nếu cần)
+                // db.Dispose();
             }
         }
+
 
     }
 }
