@@ -55,6 +55,8 @@
           <Property Name="BirthDate" Type="date" />
           <Property Name="TypeEmployee" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Password" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="image" Type="image" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="tb_Ingredient">
           <Key>
@@ -452,6 +454,8 @@
           <NavigationProperty Name="tb_OverTime" Relationship="Self.FK_tb_OverTime_tb_Employee" FromRole="tb_Employee" ToRole="tb_OverTime" />
           <NavigationProperty Name="tb_SickOff" Relationship="Self.FK_tb_SickOff_tb_Employee" FromRole="tb_Employee" ToRole="tb_SickOff" />
           <NavigationProperty Name="tb_Wage" Relationship="Self.FK_tb_Wage_tb_Employee" FromRole="tb_Employee" ToRole="tb_Wage" />
+          <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="tb_Ingredient">
           <Key>
@@ -857,6 +861,8 @@
           <EntitySetMapping Name="tb_Employee">
             <EntityTypeMapping TypeName="PBL3Model.tb_Employee">
               <MappingFragment StoreEntitySet="tb_Employee">
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="image" ColumnName="image" />
                 <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />

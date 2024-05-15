@@ -95,11 +95,7 @@ namespace GUI
             }
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new AccountForm());
-        }
+       
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
@@ -127,7 +123,7 @@ namespace GUI
 
         private void iconButton1_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new AccountForm(_id));
+            OpenChildForm(new AccountForm1(_id));
 
             ActivateButton(sender, RGBColors.color1);
 
@@ -178,5 +174,7 @@ namespace GUI
             childForm.Show();
             lblHome.Text = childForm.Text;
         }
+
+        
     }
 }
