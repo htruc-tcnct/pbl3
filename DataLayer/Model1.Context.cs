@@ -25,6 +25,7 @@ namespace DataLayer
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<tb_Admin> tb_Admin { get; set; }
         public virtual DbSet<tb_Category> tb_Category { get; set; }
         public virtual DbSet<tb_Customer> tb_Customer { get; set; }

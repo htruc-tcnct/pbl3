@@ -22,7 +22,7 @@ namespace DataLayer
     
         public string InvoiceID { get; set; }
         public string CustomerID { get; set; }
-        public System.DateTime OrderDate { get; set; }
+        public Nullable<System.DateTime> OrderDate { get; set; }
         public string PaymentID { get; set; }
         public string Status { get; set; }
         public string Note { get; set; }

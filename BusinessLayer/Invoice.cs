@@ -1,4 +1,5 @@
-﻿using DataLayer;
+﻿using BusinessLayer.DTO;
+using DataLayer;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
@@ -19,6 +20,7 @@ namespace BusinessLayer
             return db.tb_Invoice.ToList();
 
         }
+       
         public tb_Invoice getItem(string id) { return db.tb_Invoice.FirstOrDefault(x => x.InvoiceID == id); }
         public bool checkExist(string username)
         {
@@ -52,6 +54,11 @@ namespace BusinessLayer
                 throw;
             }
 
+        }
+        public string GetLastInvoiceID()
+        {
+            var lastInvoice = db.tb_Invoice.OrderByDescending(i => i.InvoiceID).FirstOrDefault();
+            return lastInvoice?.InvoiceID;
         }
         public tb_Invoice Update(tb_Invoice customer)
         {

@@ -84,8 +84,8 @@
             this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.sidebar.Controls.Add(this.menuContainer);
             this.sidebar.Controls.Add(this.pnThongKe);
-            this.sidebar.Controls.Add(this.pnThucDon);
             this.sidebar.Controls.Add(this.pnNguyenLieu);
+            this.sidebar.Controls.Add(this.pnThucDon);
             this.sidebar.Controls.Add(this.pnDangXuat);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 39);
@@ -102,7 +102,7 @@
             this.menuContainer.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.menuContainer.Location = new System.Drawing.Point(3, 3);
             this.menuContainer.Name = "menuContainer";
-            this.menuContainer.Size = new System.Drawing.Size(241, 53);
+            this.menuContainer.Size = new System.Drawing.Size(241, 75);
             this.menuContainer.TabIndex = 7;
             // 
             // btnTaiKhoan
@@ -116,7 +116,7 @@
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTaiKhoan.Location = new System.Drawing.Point(3, 3);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Size = new System.Drawing.Size(238, 56);
+            this.btnTaiKhoan.Size = new System.Drawing.Size(238, 70);
             this.btnTaiKhoan.TabIndex = 4;
             this.btnTaiKhoan.Text = "Quản lý tài khoản";
             this.btnTaiKhoan.UseVisualStyleBackColor = false;
@@ -158,7 +158,7 @@
             this.pnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.pnThongKe.Controls.Add(this.btnThongKe);
             this.pnThongKe.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.pnThongKe.Location = new System.Drawing.Point(3, 62);
+            this.pnThongKe.Location = new System.Drawing.Point(3, 84);
             this.pnThongKe.Name = "pnThongKe";
             this.pnThongKe.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.pnThongKe.Size = new System.Drawing.Size(241, 74);
@@ -188,7 +188,7 @@
             this.pnThucDon.Controls.Add(this.btnThucDon);
             this.pnThucDon.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.pnThucDon.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnThucDon.Location = new System.Drawing.Point(3, 142);
+            this.pnThucDon.Location = new System.Drawing.Point(3, 244);
             this.pnThucDon.Name = "pnThucDon";
             this.pnThucDon.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.pnThucDon.Size = new System.Drawing.Size(241, 74);
@@ -220,7 +220,7 @@
             this.pnNguyenLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.pnNguyenLieu.Controls.Add(this.btnNguyenLieu);
             this.pnNguyenLieu.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.pnNguyenLieu.Location = new System.Drawing.Point(3, 222);
+            this.pnNguyenLieu.Location = new System.Drawing.Point(3, 164);
             this.pnNguyenLieu.Name = "pnNguyenLieu";
             this.pnNguyenLieu.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.pnNguyenLieu.Size = new System.Drawing.Size(241, 74);
@@ -248,7 +248,7 @@
             this.pnDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.pnDangXuat.Controls.Add(this.btnDangXuat);
             this.pnDangXuat.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.pnDangXuat.Location = new System.Drawing.Point(3, 302);
+            this.pnDangXuat.Location = new System.Drawing.Point(3, 324);
             this.pnDangXuat.Name = "pnDangXuat";
             this.pnDangXuat.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.pnDangXuat.Size = new System.Drawing.Size(241, 74);
