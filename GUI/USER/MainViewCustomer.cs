@@ -96,6 +96,12 @@ namespace GUI
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
+<<<<<<< HEAD
+=======
+
+       
+
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
@@ -184,5 +190,9 @@ namespace GUI
             lblHome.Text = childForm.Text;
         }
 
+<<<<<<< HEAD
+=======
+        
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
     }
 }
