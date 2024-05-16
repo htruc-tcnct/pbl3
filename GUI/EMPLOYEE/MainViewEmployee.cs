@@ -20,7 +20,6 @@ using BusinessLayer;
 using DataLayer;
 using GUI.EMPLOYEE.ManageTable;
 using GUI.EMPLOYEE.TaiKhoanNhanVien;
-using GUI.EMPLOYEE.payroll;
 namespace GUI
 {
     public partial class MainViewEmployee : Form
@@ -103,14 +102,14 @@ namespace GUI
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new tinhluong());
+            OpenChildForm(new OrderForm());
 
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new quanlydatban());
+            OpenChildForm(new ManageTable());
 
         }
 

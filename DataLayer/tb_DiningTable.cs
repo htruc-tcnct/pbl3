@@ -21,7 +21,6 @@ namespace DataLayer
         }
     
         public string TableID { get; set; }
-        public string Place { get; set; }
         public int NumberPerson { get; set; }
         public string Description { get; set; }
     
