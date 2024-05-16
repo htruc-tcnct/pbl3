@@ -1,6 +1,6 @@
 ﻿namespace GUI.EMPLOYEE.ManageTable
 {
-    partial class ManageTable
+    partial class quanlydatban
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.treeView2 = new System.Windows.Forms.TreeView();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // treeView1
-            // 
-            this.treeView1.Location = new System.Drawing.Point(82, 70);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(871, 136);
-            this.treeView1.TabIndex = 0;
             // 
             // label1
             // 
@@ -62,13 +57,6 @@
             this.label2.Size = new System.Drawing.Size(269, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "Danh sách đã được xác nhận";
-            // 
-            // treeView2
-            // 
-            this.treeView2.Location = new System.Drawing.Point(82, 267);
-            this.treeView2.Name = "treeView2";
-            this.treeView2.Size = new System.Drawing.Size(871, 121);
-            this.treeView2.TabIndex = 3;
             // 
             // label3
             // 
@@ -91,31 +79,52 @@
             this.button1.Text = "In hóa đơn";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // ManageTable
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(82, 82);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(871, 107);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(82, 291);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(871, 107);
+            this.dataGridView2.TabIndex = 7;
+            // 
+            // quanlydatban
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 491);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.treeView2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.treeView1);
-            this.Name = "ManageTable";
+            this.Name = "quanlydatban";
             this.Text = "ManageTable";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TreeView treeView2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
