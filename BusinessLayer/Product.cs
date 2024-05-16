@@ -19,6 +19,10 @@ namespace BusinessLayer
             return db.tb_Product.ToList();
 
         }
+        public List<tb_Product> GetProductsByCategory1(string tableName, string categoryID)
+        {
+            return db.tb_Product.Where(p => p.CategoryID.Trim() == categoryID.Trim()).ToList();
+        }
         public tb_Product getItem(string id) { return db.tb_Product.FirstOrDefault(x => x.ProductID == id); }
         public bool checkExist(string id)
         {

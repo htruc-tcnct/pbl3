@@ -20,7 +20,13 @@ using BusinessLayer;
 using DataLayer;
 using GUI.EMPLOYEE.ManageTable;
 using GUI.EMPLOYEE.TaiKhoanNhanVien;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 using GUI.EMPLOYEE.payroll;
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
+>>>>>>> a8e7106294ae53ace33d87a633f1b01830bd5bd3
 namespace GUI
 {
     public partial class MainViewEmployee : Form
@@ -103,14 +109,30 @@ namespace GUI
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+<<<<<<< HEAD
+            OpenChildForm(new OrderForm());
+=======
+<<<<<<< HEAD
+            OpenChildForm(new OrderForm());
+=======
             OpenChildForm(new tinhluong());
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
+>>>>>>> a8e7106294ae53ace33d87a633f1b01830bd5bd3
 
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+<<<<<<< HEAD
+            OpenChildForm(new ManageTable());
+=======
+<<<<<<< HEAD
+            OpenChildForm(new ManageTable());
+=======
             OpenChildForm(new quanlydatban());
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
+>>>>>>> a8e7106294ae53ace33d87a633f1b01830bd5bd3
 
         }
 

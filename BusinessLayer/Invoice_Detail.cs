@@ -19,6 +19,11 @@ namespace BusinessLayer
             return db.tb_Invoice_Detail.ToList();
 
         }
+        public string GetLastInvoiceID()
+        {
+            var lastInvoice = db.tb_Invoice_Detail.OrderByDescending(i => i.ID).FirstOrDefault();
+            return lastInvoice?.ID;
+        }
         public tb_Invoice_Detail getItem(string id) { return db.tb_Invoice_Detail.FirstOrDefault(x => x.ID == id); }
         public bool checkExist(string username)
         {

@@ -59,9 +59,11 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="DiningTable.cs" />
     <Compile Include="DTO\CBBItem.cs" />
+    <Compile Include="DTO\DetailInvoice_DTO.cs" />
+    <Compile Include="DTO\Invoice_DTO.cs" />
     <Compile Include="DTO\NhanVien_DTO.cs" />
-    <Compile Include="DTO\SalaryDTO.cs" />
     <Compile Include="DTO\SalaryEmployee.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="HashCode.cs" />
@@ -71,7 +73,6 @@
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Salary.cs" />
-    <Compile Include="SalaryCalculator.cs" />
     <Compile Include="sickOff.cs" />
   </ItemGroup>
   <ItemGroup>
