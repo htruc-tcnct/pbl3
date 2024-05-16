@@ -23,6 +23,7 @@ namespace GUI
     public partial class MainViewCustomer : Form
     {
         string _id;
+      
         Account _customer;
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -34,6 +35,7 @@ namespace GUI
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
             _id = user;
+            UserSession.UserID = user;
             _customer = new Account();
             LoadToView();
         }
@@ -47,7 +49,7 @@ namespace GUI
   public static Color color6 = Color.FromArgb(24, 161, 251);  
         }
 
-       private void ActivateButton (object sender, Color color)
+       public void ActivateButton (object sender, Color color)
         {
             if(sender != null)
             {
@@ -94,15 +96,25 @@ namespace GUI
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
+<<<<<<< HEAD
+=======
 
        
 
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new OrderForm());
 
         }
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new AccountForm1());
+        }
+
+    
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
@@ -158,7 +170,8 @@ namespace GUI
         {
 
         }
-        private void OpenChildForm(Form childForm)
+
+        public void OpenChildForm(Form childForm)
         {
             if (currentChildForm != null)
             {
@@ -172,9 +185,14 @@ namespace GUI
             panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+
+            // Cập nhật tiêu đề của lblHome
             lblHome.Text = childForm.Text;
         }
 
+<<<<<<< HEAD
+=======
         
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
     }
 }

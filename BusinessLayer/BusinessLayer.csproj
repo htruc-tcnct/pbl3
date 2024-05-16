@@ -59,7 +59,10 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="DiningTable.cs" />
     <Compile Include="DTO\CBBItem.cs" />
+    <Compile Include="DTO\DetailInvoice_DTO.cs" />
+    <Compile Include="DTO\Invoice_DTO.cs" />
     <Compile Include="DTO\NhanVien_DTO.cs" />
     <Compile Include="DTO\SalaryDTO.cs" />
     <Compile Include="DTO\SalaryEmployee.cs" />

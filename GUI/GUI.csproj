@@ -110,6 +110,13 @@
     <Compile Include="Admin\Nhanvien\Them.Designer.cs">
       <DependentUpon>Them.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="EMPLOYEE\ManageTable\ManageTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE\ManageTable\ManageTable.Designer.cs">
+      <DependentUpon>ManageTable.cs</DependentUpon>
+=======
     <Compile Include="EMPLOYEE\ManageTable\quanlydatban.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +128,7 @@
     </Compile>
     <Compile Include="EMPLOYEE\tinhluong\tinhluong.Designer.cs">
       <DependentUpon>tinhluong.cs</DependentUpon>
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
     </Compile>
     <Compile Include="EMPLOYEE\TaiKhoanNhanVien\accountNV.cs">
       <SubType>Form</SubType>
@@ -140,11 +148,36 @@
     <Compile Include="Admin\MainViewAdmin.Designer.cs">
       <DependentUpon>MainViewAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="USER\DatBan\OrderFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER\DatBan\OrderFood.Designer.cs">
+      <DependentUpon>OrderFood.cs</DependentUpon>
+    </Compile>
     <Compile Include="USER\DatBan\OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="USER\DatBan\OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER\DatBan\ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USER\DatBan\ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER\DatBan\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USER\DatBan\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER\DatBan\UserSession.cs" />
+    <Compile Include="USER\LichSuDat\detailHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER\LichSuDat\detailHistory.Designer.cs">
+      <DependentUpon>detailHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="USER\LichSuDat\HistoryForm.cs">
       <SubType>Form</SubType>
@@ -242,15 +275,23 @@
     <EmbeddedResource Include="Admin\Nhanvien\Them.resx">
       <DependentUpon>Them.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="EMPLOYEE\ManageTable\ManageTable.resx">
+      <DependentUpon>ManageTable.cs</DependentUpon>
+=======
     <EmbeddedResource Include="EMPLOYEE\ManageTable\quanlydatban.resx">
       <DependentUpon>quanlydatban.cs</DependentUpon>
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
     </EmbeddedResource>
     <EmbeddedResource Include="EMPLOYEE\TaiKhoanNhanVien\accountNV.resx">
       <DependentUpon>accountNV.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
     <EmbeddedResource Include="EMPLOYEE\tinhluong\tinhluong.resx">
       <DependentUpon>tinhluong.cs</DependentUpon>
     </EmbeddedResource>
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,8 +335,20 @@
     <EmbeddedResource Include="Admin\THUCDON\ThemMoi.resx">
       <DependentUpon>ThemMoi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="USER\DatBan\OrderFood.resx">
+      <DependentUpon>OrderFood.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="USER\DatBan\OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\DatBan\ucProduct.resx">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\DatBan\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER\LichSuDat\detailHistory.resx">
+      <DependentUpon>detailHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="USER\LichSuDat\HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>
@@ -335,6 +388,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\thongke\" />
+<<<<<<< HEAD
+    <Folder Include="EMPLOYEE\payroll\" />
+=======
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

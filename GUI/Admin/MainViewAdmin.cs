@@ -44,7 +44,7 @@ namespace GUI
             if(menuExpand == false)
             {
                     menuContainer.Height += 10;
-                if(menuContainer.Height >= 118)
+                if(menuContainer.Height >= 168)
                 {
                     menuTransition.Stop();
                     menuExpand = true;
