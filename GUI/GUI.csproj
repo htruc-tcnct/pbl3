@@ -363,7 +363,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\thongke\" />
-    <Folder Include="EMPLOYEE\payroll\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
