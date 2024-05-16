@@ -110,11 +110,33 @@
     <Compile Include="Admin\Nhanvien\Them.Designer.cs">
       <DependentUpon>Them.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="EMPLOYEE\ManageTable\ManageTable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EMPLOYEE\ManageTable\ManageTable.Designer.cs">
       <DependentUpon>ManageTable.cs</DependentUpon>
+=======
+<<<<<<< HEAD
+    <Compile Include="EMPLOYEE\ManageTable\ManageTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE\ManageTable\ManageTable.Designer.cs">
+      <DependentUpon>ManageTable.cs</DependentUpon>
+=======
+    <Compile Include="EMPLOYEE\ManageTable\quanlydatban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE\ManageTable\quanlydatban.Designer.cs">
+      <DependentUpon>quanlydatban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEE\tinhluong\tinhluong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE\tinhluong\tinhluong.Designer.cs">
+      <DependentUpon>tinhluong.cs</DependentUpon>
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
+>>>>>>> a8e7106294ae53ace33d87a633f1b01830bd5bd3
     </Compile>
     <Compile Include="EMPLOYEE\TaiKhoanNhanVien\accountNV.cs">
       <SubType>Form</SubType>
@@ -261,12 +283,31 @@
     <EmbeddedResource Include="Admin\Nhanvien\Them.resx">
       <DependentUpon>Them.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="EMPLOYEE\ManageTable\ManageTable.resx">
       <DependentUpon>ManageTable.cs</DependentUpon>
+=======
+<<<<<<< HEAD
+    <EmbeddedResource Include="EMPLOYEE\ManageTable\ManageTable.resx">
+      <DependentUpon>ManageTable.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="EMPLOYEE\ManageTable\quanlydatban.resx">
+      <DependentUpon>quanlydatban.cs</DependentUpon>
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
+>>>>>>> a8e7106294ae53ace33d87a633f1b01830bd5bd3
     </EmbeddedResource>
     <EmbeddedResource Include="EMPLOYEE\TaiKhoanNhanVien\accountNV.resx">
       <DependentUpon>accountNV.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="EMPLOYEE\tinhluong\tinhluong.resx">
+      <DependentUpon>tinhluong.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
+>>>>>>> a8e7106294ae53ace33d87a633f1b01830bd5bd3
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -363,6 +404,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\thongke\" />
+<<<<<<< HEAD
+    <Folder Include="EMPLOYEE\payroll\" />
+=======
+>>>>>>> f75a0c36914b14e930f965dafc9dc71fd955fb7d
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
